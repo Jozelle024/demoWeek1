@@ -90,7 +90,7 @@ section {
 article {
     float: right;
     position: relative;
-    line-height:1.6;
+    line-height:1.4;
     background-color:white;
     font-size: 150%;
     overflow: scroll;
