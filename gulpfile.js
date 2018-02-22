@@ -10,9 +10,9 @@ gulp.task('default',function(){
 
 
 gulp.task('copiaFile', function(){
-    gulp.src('*.html').pipe(gulp.dest('dist'));
-    gulp.src('*.js').pipe(gulp.dest('dist'));
-    gulp.src('*.css').pipe(gulp.dest('dist'));
+    gulp.src('html/*.html').pipe(gulp.dest('dist'));
+    gulp.src('javascript/*.js').pipe(gulp.dest('dist'));
+    gulp.src('css/*.css').pipe(gulp.dest('dist'));
 });
 
 // to configure jshint task
