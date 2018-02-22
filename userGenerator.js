@@ -2,14 +2,14 @@ var Name = {
     title: 'Ms.',
     first: 'Courtney',
     last: 'Morris'
-}
+};
 
 var Location = {
     street: 'First street 6434',
     city: 'London',
     state: 'United Kingdom',
     postcode: 461234
-}
+};
 
 var Login = {
     username: 'courtney',
@@ -18,17 +18,17 @@ var Login = {
     md5: 6342234,
     sha1: 'bvsbwr4345653',
     sha256: 'sdgsntdhergwefa34'
-}
+};
 
 var Id = {
     name: 'mcm',
     value: '34'
-}
+};
 var Picture = {
     large: "https://randomuser.me/api/portraits/woman/2.jpg",
     medium: "https://randomuser.me/api/portraits/women/2.jpg",
     thumbnail: "https://randomuser.me/api/portraits/women/2.jpg"
-}
+};
 var Persona = {
     gender: 'female',
     name: Name,
@@ -43,19 +43,22 @@ var Persona = {
     picture: Picture,
     nat: 'Uk',
     setNation: function(nazione){
+        "use strict";
         this.nat= nazione;
     },
-}
+};
 
-var getRandomUser = function (nazione){
+/*var getRandomUser = function (nazione){
+    "use strict";
     var tempP= Persona;
     tempP.setNation(nazione);
     //tempP.nat = nazione;
     return tempP;
-}
-console.log(getRandomUser('uk').nat);
+}; */
 
+/* exported extractRandomUser */
 function extractRandomUser(nazione) {
+    "use strict";
     var tempP = Persona;
     tempP.setNation(nazione);
     //tempP.nat = nazione;
