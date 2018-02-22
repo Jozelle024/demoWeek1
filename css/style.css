@@ -1,103 +1,107 @@
 * {
     font-family: 'Raleway';
-    font-size:22px;
+    font-size:18px;
     vertical-align: middle;
+}
+html{
+    width: 100%;
 }
 body {
     height: 1500px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
-.menu{
+nav {
     position: relative;
-    top:20px;
-    background-color: peachpuff;
+    top:30px;
+    background-color: #FE948A;
+    color: #380E0A;
     width:100%;
-    border: 3px solid white;
-    display:block;  
+    border: 1px solid white; 
     height: auto;
+    text-align: center
 }
-
-main {
-    height: 100%;
-    background-color: peachpuff;
-    border: 3px solid white;
-    width: 100%;
+a {
+    color: #380E0A;
+    text-decoration:none;
 }
-
-.title h1{
+.title{
     position: relative;
-    top: 20%;
+    top: 10px;
     text-transform: uppercase;
     text-align: center;
     border: 9px solid white;
     width:60%;
     margin: auto;
 }
-
 h1 {
     font-family: 'Dancing Script';
     font-size: 30px;
-    padding: 20px;
+    padding: 2%;
+}
+
+main {
+    position: relative;
+    top: 2%;
+    height: 90%;
+    background-color: #FE948A;
+    border: 1px solid white;
+    width: 100%;
 }
 
 .menu ul li {
     padding-top: 2%;
     display:inline;
-    margin: 40px;
+    margin: 25px;
 }
 
-.title {
-    height: 200px;
-    background-image: url("http://www.wallpaperking.co.uk/7348-thickbox_default/collage-multi-colour-grey-wallpaper-2036-1.jpg");
+header{
+    height: auto;
+    /*background-image: url("http://www.wallpaperking.co.uk/7348-thickbox_default/collage-multi-colour-grey-wallpaper-2036-1.jpg"); */
+    background-color: #FE948A;
+    color: #380E0A;
 }
 
-#profimg{
+.info2{
+    right: 25%;
+
+}
+
+#profimg {
+    position: relative;
+    top:5%;
+    left: 5%;
     float:left;
-    width: 100%;
-    position: absolute;
-    left:10px;
-    top:400px;
-    right:10px;
-    margin:10px;
-    background-color: white;
+    width: 30%;
+    background-color: #FFFDFD;
     height: auto;
 }
-
 img {
-    border-radius: 50%;
-    width: 20%;
-    border: 1px solid black;
-    position: relative;
-    left: 60px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+section {
+    height: 35%;
+    width: 90%;
+    margin: auto;
+    background-color: #FFFDFD;
+    margin-top: 3%;
 }
 
 article {
     float: right;
     position: relative;
-    top: 5%;
-    right: 5%;
     line-height:1.6;
     background-color:white;
-    width: 60%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 5px 5px grey;
-    border: 1px solid black;
     font-size: 150%;
     overflow: scroll;
 }
-
 article p::first-letter{
     font-size: 30px;
     text-transform: uppercase;
-}
-
-#contact {
-    clear: both;
-    height: auto;
-    padding: 20px 30px;
-    
 }
 
 td{
@@ -105,9 +109,11 @@ td{
 }
 
 footer {
+    position: relative;
+    top: 1%;
     height: auto;
-    background-color: mintcream;
-    border: 1px solid black;
+    background-color: #380E0A;
+    color: #FE948A;
     bottom: 5px;
     width: 100%;
     text-align: center;
@@ -147,7 +153,6 @@ article p {
     width:50%;
     height: auto;
     margin:50px auto;
-    
     display:block;
     border: 1px solid black;
     box-shadow: 5px 5px grey;
