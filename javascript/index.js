@@ -12,6 +12,9 @@ function pageLoad() {
         insertInfo(persona, genInfo);
         var addInfo = ['gender', 'registered', 'phone', 'nat'];
         insertInfo(persona, addInfo);
+        var header = document.getElementById('headName');
+        var namePerson = persona.name.first + ' ' + persona.name.last;
+        header.innerHTML = namePerson;
 
     });
 }
@@ -19,7 +22,7 @@ function pageLoad() {
 function insertPicture(person, idDiv) { // get the picture of the user
     "use strict";
     var pic = document.createElement('img');
-    pic.src = person.picture.medium;
+    pic.src = person.picture.large;
     var div = document.getElementById(idDiv);
     div.appendChild(pic);
 }

@@ -101,6 +101,10 @@ article p::first-letter{
     text-transform: uppercase;
 }
 
+#name {
+    text-transform: capitalize;
+}
+
 td{
     padding: 3px;
 }
