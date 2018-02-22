@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 </head>
 
-<body>
+<body onload="pageLoad()">
     <header>
         <div class="title">
-            <h1>Random Person Information</h1>
+            <h1 id="headName"></h1>
+            <!-- <p>Front End Web Developer</p> -->
         </div>
         <nav>
             <div class="menu">
@@ -24,17 +25,27 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
                         <a href="#about">About</a>
                     </li>
+                    <li>
+                        <a href="#about">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#about">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#about">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
                     </a>
                 </ul>
             </div>
         </nav>
-
     </header>
+
     <main>
         <div id="contact">
             <p>Do you want to contact me? Just fill up the form below and leave me a message.</p>
@@ -73,8 +84,8 @@
                 </table>
             </form>
         </div>
-
     </main>
+
     <footer>
         <p>All rights reserved. </br>
             Informations from random user generator. </p>
@@ -94,7 +105,7 @@
 
         </div>
     </footer>
-
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../javascript/index.js"></script>
     <script src="../javascript/userGenerator.js"></script>
 
