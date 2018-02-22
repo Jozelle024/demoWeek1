@@ -1,5 +1,4 @@
 /* exported pageLoad */
-/* global extractRandomUser */
 /* global $ */
 function pageLoad() {
     "use strict";
