@@ -2,6 +2,7 @@
 /* global $ */
 
 function pageLoad() {
+    
     "use strict";
     //var persona = extractRandomUser('Uk');
     $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user

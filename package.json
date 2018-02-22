@@ -28,10 +28,9 @@
     "gulp-jshint": "^2.1.0",
     "gulp-util": "3.0.8",
     "jquery": "^3.3.1",
+    "jquery-loading": "^0.2.8",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1"
   },
-  "dependencies": {
-    "jquery-loading": "^0.2.8"
-  }
+  "dependencies": {}
 }
