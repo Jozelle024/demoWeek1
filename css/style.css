@@ -36,14 +36,14 @@ a {
 }
 h1 {
     font-family: 'Dancing Script';
-    font-size: 30px;
+    font-size: 40px;
     padding: 2%;
 }
 
 main {
     position: relative;
     top: 2%;
-    height: 90%;
+    height: 80%;
     background-color: #FE948A;
     /*background: linear-gradient(45deg, #BC1101, #FE948A); */
     border: 1px solid white;
@@ -65,26 +65,27 @@ header{
 
 #profimg {
     position: relative;
-    top:5%;
     left: 5%;
     float:left;
     width: 30%;
-    background-color: #FFFDFD;
     height: 100%;
 }
 img {
     width: 100%;
     height: auto;
     margin-top: 20%;
+    border: 5px solid #380E0A;
+    padding: 2px;
 }
 
 section {
-    height: 35%;
+    height: auto;
     width: 90%;
     margin: auto;
     background-color: #FFFDFD;
     margin-top: 3%;
     overflow: scroll;
+    box-shadow: #BC1101 5px 5px;
 }
 
 article {
@@ -101,6 +102,10 @@ article p::first-letter{
     text-transform: uppercase;
 }
 
+#name {
+    text-transform: capitalize;
+}
+
 td{
     padding: 3px;
 }
@@ -114,21 +119,21 @@ footer {
     bottom: 5px;
     width: 100%;
     text-align: center;
-    
 }
 footer p {
     font-size: 15px;
-
+    padding: 2%;
 }
-
+footer ul {
+    padding-left: 0;
+}
 footer ul li{
     list-style: none;
     display: inline;
-    
+    font-size: 30px;
 }
 .fa {
     padding: 10px;
-    font-size: 50px;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -152,11 +157,10 @@ article p {
     height: auto;
     margin:50px auto;
     display:block;
-    border: 1px solid black;
-    box-shadow: 5px 5px grey;
-    border-radius: 5px;
-    background-color: white;
+    box-shadow: 5px 5px #380E0A;
+    background-color: #FFFDFD;
     overflow: scroll;
+    padding: 2%;
 }
 
 table tr td {
