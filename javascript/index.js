@@ -4,6 +4,7 @@
 function pageLoad() {
     
     "use strict";
+    $('body').loading('toggle');
     //var persona = extractRandomUser('Uk');
     $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user
         var persona = data.results[0];
@@ -15,6 +16,7 @@ function pageLoad() {
         var header = document.getElementById('headName');
         var namePerson = persona.name.first + ' ' + persona.name.last;
         header.innerHTML = namePerson;
+        $("body").loading('toggle');
     });
 }
 
