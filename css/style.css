@@ -94,7 +94,6 @@ article {
     line-height:1.4;
     background-color:white;
     font-size: 150%;
-    overflow: scroll;
     width: 50%;
 }
 article p::first-letter{
