@@ -1,4 +1,4 @@
-//jshint ignore::start
+// jshint ignore: start
 
 var gulp = require('gulp');
 var gutil = require('gulp-util');
@@ -21,4 +21,4 @@ gulp.task('jshint', function() {
     return gulp.src('*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
-})
+});
