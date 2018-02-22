@@ -1,23 +1,28 @@
+/* exported pageLoad */
+/* global extractRandomUser */
 function pageLoad() {
+    "use strict";
     var persona = extractRandomUser('Uk');
 
-    var profImg = document.getElementById('profImg');
-    insertPicture(persona,profimg);
+    
+    insertPicture(persona,'profimg');
     var genInfo = ['name', 'birthday', 'email', 'location', 'cell'];
     insertInfo(persona, genInfo);
     var addInfo = ['gender','registered', 'phone','nat'];
     insertInfo(persona, addInfo);
-
 }
 
 function insertPicture(person, idDiv){ // get the picture of the user
+    "use strict";
     var pic = document.createElement('img');
     pic.src = person.picture.medium;
-    idDiv.appendChild(pic);
+    var div = document.getElementById(idDiv);
+    div.appendChild(pic);
 }
 
 function insertInfo(persona, arrayDati){
-    
+    "use strict";
+
     for(var i = 0; i<arrayDati.length; i++){
         var key = arrayDati[i];
        
