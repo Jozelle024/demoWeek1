@@ -43,7 +43,7 @@ h1 {
 main {
     position: relative;
     top: 2%;
-    height: 90%;
+    height: 80%;
     background-color: #FE948A;
     /*background: linear-gradient(45deg, #BC1101, #FE948A); */
     border: 1px solid white;
@@ -65,11 +65,9 @@ header{
 
 #profimg {
     position: relative;
-    top:5%;
     left: 5%;
     float:left;
     width: 30%;
-    background-color: #FFFDFD;
     height: 100%;
 }
 img {
