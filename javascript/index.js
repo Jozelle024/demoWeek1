@@ -11,6 +11,9 @@ function pageLoad() {
 
         var random = getRandomInt(0, 100);
         var persona = data[random];
+
+        console.log(data[102]);
+
         insertPicture(persona, 'profimg');
         var genInfo = ['name', 'dob', 'email', 'location', 'cell'];
         insertInfo(persona, genInfo);
