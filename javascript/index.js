@@ -2,14 +2,14 @@
 /* global $ */
 
 function pageLoad() {
-    
+
     "use strict";
     $('body').loading('toggle');
     //var persona = extractRandomUser('Uk');
     $.getJSON('http://localhost:3000/results', function (data) { // to get json from th website random user
         // https://randomuser.me/api/
 
-        var random = getRandomInt(0,100);
+        var random = getRandomInt(0, 100);
         var persona = data[random];
         insertPicture(persona, 'profimg');
         var genInfo = ['name', 'dob', 'email', 'location', 'cell'];
@@ -63,7 +63,27 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-  }
+}
+
+$('#submit').click(function () {
+    "use strict";
+    console.log('inside click');
+    var persona = {
+
+        "name": {
+            "title": "mr",
+            "first": "will",
+            "last": "smith"
+        },
+
+        "email": "willsmith@gmail.com"
+    };
+    $.post('http://localhost:3000/results', persona) // .post add data to the json on button clicked
+        .done(function (data) {
+            alert("Data Loaded: " + data);
+        });
+
+});
 
 /* function insertInfo(idParent, content){
     var id = document.getElementById(idParent);

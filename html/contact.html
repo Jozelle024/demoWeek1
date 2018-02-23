@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/jquery-easy-loading/dist/jquery.loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 </head>
 
-<body onload="pageLoad()">
+<body>
     <header>
         <div class="title">
             <h1 id="headName">Contact</h1>
@@ -75,10 +76,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" value="Send" id="data" class="button">
+                            <input type="submit" value="Send" id="submit" class="button">
                         </td>
                         <td>
-                            <input type="reset" value="Reset" class="button">
+                            <input type="reset" value="Reset" id="reset" class="button">
                         </td>
                     </tr>
                 </table>
@@ -106,6 +107,7 @@
         </div>
     </footer>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
     <script src="../javascript/index.js"></script>
     <script src="../javascript/userGenerator.js"></script>
 
