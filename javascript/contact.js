@@ -1,7 +1,7 @@
 /* global $ */
 $('#submit').click(function(){
     "use strict";
-    var name = $('#name').val();
+    /*var name = $('#name').val();
     var uname = $('#username').val();
     var tel = $('#tel').val();
     var email = $('#email').val();
@@ -17,8 +17,8 @@ $('#submit').click(function(){
         "phone": tel,
         "email": email,
     };
-
-    $.post('http://localhost:3000/results', persona)
+    */
+    $.post('http://localhost:3000/results', $('#contactForm').serialize())
     .done(function(){
         alert('Got your informations!');
     });

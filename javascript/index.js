@@ -83,9 +83,9 @@ function getRandomInt(min, max) {
             alert("Data Loaded: " + data);
         });
 
-}); */
+}); 
 
-/* function insertInfo(idParent, content){
+function insertInfo(idParent, content){
     var id = document.getElementById(idParent);
     var p = document.createElement('p');
     p.innerText = content;
