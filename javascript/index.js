@@ -6,8 +6,11 @@ function pageLoad() {
     "use strict";
     $('body').loading('toggle');
     //var persona = extractRandomUser('Uk');
-    $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user
-        var persona = data.results[0];
+    $.getJSON('http://localhost:3000/results', function (data) { // to get json from th website random user
+        // https://randomuser.me/api/
+
+        var random = getRandomInt(0,100);
+        var persona = data[random];
         insertPicture(persona, 'profimg');
         var genInfo = ['name', 'dob', 'email', 'location', 'cell'];
         insertInfo(persona, genInfo);
@@ -54,6 +57,13 @@ function insertInfo(persona, arrayDati) {
 
     }
 }
+
+function getRandomInt(min, max) {
+    "use strict";
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
 
 /* function insertInfo(idParent, content){
     var id = document.getElementById(idParent);
