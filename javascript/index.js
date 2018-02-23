@@ -65,7 +65,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-$('#submit').click(function () {
+/*$('#submit').click(function () {
     "use strict";
     console.log('inside click');
     var persona = {
@@ -83,7 +83,7 @@ $('#submit').click(function () {
             alert("Data Loaded: " + data);
         });
 
-});
+}); */
 
 /* function insertInfo(idParent, content){
     var id = document.getElementById(idParent);
