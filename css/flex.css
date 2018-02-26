@@ -61,7 +61,7 @@ section {
 }
 #profimg {
     align-self: center;
-    flex-grow: 1;
+    width: 40%;
 }
 img {
     width: 90%;
