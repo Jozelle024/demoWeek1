@@ -15,21 +15,19 @@ header{
     /*background-image: url("http://www.wallpaperking.co.uk/7348-thickbox_default/collage-multi-colour-grey-wallpaper-2036-1.jpg"); */
     background: linear-gradient(45deg, #BC1101, #FE948A);
     color: #380E0A;
-    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title{
-    position: relative;
-    top: 10px;
     text-transform: uppercase;
     text-align: center;
     border: 9px solid white;
     width:60%;
-    margin: auto;
+    margin: 2% 0;
 }
 nav {
-    /*position: relative;
-    top:30px; */
     background-color: #FE948A;
     color: #380E0A;
     width:100%;
@@ -45,7 +43,6 @@ a {
 h1 {
     font-family: 'Dancing Script';
     font-size: 40px;
-    padding: 2%;
 }
 
 main {
@@ -143,7 +140,7 @@ footer ul li{
 
 article p {
     padding-left: 20px;
-}
+} 
 
 .button {
     width: 100%;
