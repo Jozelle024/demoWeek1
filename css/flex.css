@@ -1,7 +1,6 @@
 * {
     font-family: 'Raleway';
     font-size:18px;
-    vertical-align: middle;
 }
 body {
     width: 85%;
@@ -44,6 +43,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 ul li{
     margin: 2%;
@@ -51,21 +51,21 @@ ul li{
 }
 section {
     width: 90%;
-    margin: auto;
     background-color: #FFFDFD;
-    margin: 5% 2%;
+    margin: 2% 0;
     overflow: scroll;
     box-shadow: #BC1101 5px 5px;
     display: flex;
+    align-items: center;
     padding: 1%;
 }
 #profimg {
     align-self: center;
+    flex-grow: 1;
 }
 img {
     width: 90%;
     border: 5px solid #380E0A;
-    padding: 2px;
 }
 article {
     line-height:1.4;
@@ -88,7 +88,6 @@ footer {
 }
 footer p {
     font-size: 15px;
-    padding: 2%;
 }
 ul {
     padding-left: 0;
@@ -100,34 +99,12 @@ footer ul li{
     padding: 20px;
     width: 30px;
     text-decoration: none;
-    margin: 25px;
     color: #FFFDFD;
     border-radius:50%;
     background-color:#FE948A;
 } 
-article p {
-    padding-left: 20px;
-} 
-.button {
-    width: 100%;
-    height: 100%;
-}
 #contact{
-    width:50%;
-    height: auto;
-    margin:50px auto;
-    display:block;
-    box-shadow: 5px 5px #380E0A;
-    background-color: #FFFDFD;
-    overflow: scroll;
-    padding: 2%;
-}
-table tr td {
-    padding: 10px;
-    vertical-align: top;
-}
-td{
-    padding: 3px;
+    flex-direction: column;
 }
 input{
     border: 1px solid black;
@@ -135,6 +112,5 @@ input{
     width: 100%;
 }
 textarea {
-    border: 1px solid black;
     border-radius: 5px;
 }
