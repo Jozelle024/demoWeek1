@@ -4,7 +4,6 @@
     vertical-align: middle;
 }
 body {
-    /* height: 1500px; */
     width: 85%;
     margin: auto;
     display: flex;
@@ -19,7 +18,6 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 .title{
     text-transform: uppercase;
     text-align: center;
@@ -32,7 +30,6 @@ nav {
     color: #380E0A;
     width:100%;
     border: 1px solid white; 
-    height: auto;
     text-align: center;
 }
 a {
@@ -48,8 +45,6 @@ h1 {
 main {
     height: 80%;
     background-color: #FE948A;
-    /*background: linear-gradient(45deg, #BC1101, #FE948A); */
-    border: 1px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,13 +52,11 @@ main {
 }
 
 ul li{
-    padding-top: 2%;
-    margin: 25px;
-    display: inline;
+    margin: 2%;
+    display: inline-flex;
 }
 
 section {
-    height: auto;
     width: 90%;
     margin: auto;
     background-color: #FFFDFD;
@@ -71,43 +64,31 @@ section {
     overflow: scroll;
     box-shadow: #BC1101 5px 5px;
     display: flex;
-
+    padding: 1%;
 }
-
 #profimg {
-    width: 10%;
-    flex-grow: 1;
+    flex-grow: 2;
     align-self: center;
-    margin-left: 1%;
 }
 img {
     width: 90%;
     border: 5px solid #380E0A;
     padding: 2px;
 }
-
 article {
     line-height:1.4;
     background-color:white;
-    font-size: 150%;
     overflow: scroll;
-    width: 40%;
-    flex-grow: 1.2;
+    flex-grow: 2;
     align-items: center;
 }
 article p::first-letter{
     font-size: 30px;
     text-transform: uppercase;
 }
-
 #name {
     text-transform: capitalize;
 }
-
-td{
-    padding: 3px;
-}
-
 footer {
     background-color: #380E0A;
     color: #FE948A;
@@ -123,14 +104,11 @@ ul {
     padding-left: 0;
 }
 footer ul li{
-    list-style: none;
-    display: inline;
-    font-size: 30px;
+    font-size: 24px;
 }
 .fa {
-    padding: 10px;
+    padding: 20px;
     width: 30px;
-    text-align: center;
     text-decoration: none;
     margin: 25px;
     color: #FFFDFD;
@@ -162,7 +140,9 @@ table tr td {
     padding: 10px;
     vertical-align: top;
 }
-
+td{
+    padding: 3px;
+}
 input{
     border: 1px solid black;
     border-radius: 5px;
