@@ -37,7 +37,6 @@ h1 {
     font-size: 40px;
 }
 main {
-    height: 80%;
     background-color: #FE948A;
     width: 100%;
     display: flex;
@@ -60,7 +59,6 @@ section {
     padding: 5px;
 }
 #profimg {
-    align-self: center;
     width: 40%;
 }
 img {
@@ -98,7 +96,6 @@ footer ul li{
 .fa {
     padding: 20px;
     width: 30px;
-    text-decoration: none;
     color: #FFFDFD;
     border-radius:50%;
     background-color:#FE948A;
