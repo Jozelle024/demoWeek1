@@ -29,13 +29,12 @@ header{
 }
 nav {
     background-color:$secondary-color;
-    color: $alternative-color;
     border: 1px solid $tertiary-color; 
     width: 100%;
-}
-a {
-    color: $alternative-color;
-    text-decoration:none;
+    a {
+        color: $alternative-color;
+        text-decoration:none;
+    }
 }
 h1 {
     font-family: 'Dancing Script';
