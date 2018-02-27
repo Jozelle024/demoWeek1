@@ -26,9 +26,11 @@ function pageLoad() {
         onStop: function(loading) {
           loading.overlay.slideUp(400);
         }
+        
       });
-    /*$('body').loading('toggle');
 }
+    /*$('body').loading('toggle');*/
+    
 
 function insertPicture(person, idDiv) { // get the picture of the user
     "use strict";
@@ -64,8 +66,8 @@ function insertInfo(persona, arrayDati) {
 
     }
 }
-
-/* function insertInfo(idParent, content){
+/*
+ function insertInfo(idParent, content){
     var id = document.getElementById(idParent);
     var p = document.createElement('p');
     p.innerText = content;
