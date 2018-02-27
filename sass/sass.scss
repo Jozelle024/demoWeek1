@@ -1,3 +1,7 @@
+$primary-color:#BC1101 ;
+$secondary-color:#FE948A;
+$tertiary-color: #FFFDFD;
+$alternative-color:#380E0A;
 * {
     font-family: 'Raleway';
     font-size:18px;
@@ -10,26 +14,26 @@ body {
     flex-direction: column;
 }
 header{
-    background: linear-gradient(45deg, #BC1101, #FE948A);
-    color: #380E0A;
+    background: linear-gradient(45deg,$primary-color,$secondary-color);
+    color: $alternative-color;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .title{
     text-transform: uppercase;
-    border: 10px solid white;
+    border: 10px solid $tertiary-color;
     width:60%;
     margin: 2% 0;
 }
 nav {
-    background-color: #FE948A;
-    color: #380E0A;
+    background-color:$secondary-color;
+    color: $alternative-color;
     width:100%;
-    border: 1px solid white; 
+    border: 1px solid $tertiary-color; 
 }
 a {
-    color: #380E0A;
+    color: $alternative-color;
     text-decoration:none;
 }
 h1 {
@@ -37,7 +41,7 @@ h1 {
     font-size: 40px;
 }
 main {
-    background-color: #FE948A;
+    background-color: $secondary-color;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,10 +53,10 @@ ul li{
 }
 section {
     width: 90%;
-    background-color: #FFFDFD;
+    background-color: $tertiary-color;
     margin: 2% 0;
     overflow: scroll;
-    box-shadow: #BC1101 5px 5px;
+    box-shadow: $primary-color 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,25 +67,25 @@ section {
 }
 img {
     width: 90%;
-    border: 5px solid #380E0A;
+    border: 5px solid $alternative-color;
     padding: 1%;
 }
 article {
     line-height:1.4;
-    background-color:white;
+    background-color:$tertiary-color;
     overflow: scroll;
     align-items: center;
-}
-article p::first-letter{
-    font-size: 30px;
-    text-transform: uppercase;
+    p::first-letter{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
 }
 #name {
     text-transform: capitalize;
 }
 footer {
-    background-color: #380E0A;
-    color: #FE948A;
+    background-color: $alternative-color;
+    color: $secondary-color;
     width: 100%;
 }
 footer p {
@@ -96,9 +100,9 @@ footer ul li{
 .fa {
     padding: 20px;
     width: 30px;
-    color: #FFFDFD;
+    color: $tertiary-color;
     border-radius:50%;
-    background-color:#FE948A;
+    background-color:$secondary-color;
 } 
 input{
     border: 1px solid black;
