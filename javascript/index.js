@@ -4,22 +4,30 @@
 function pageLoad() {
 
     "use strict";
-    $('body').loading('toggle');
-    setTimeout(function () {
-        //var persona = extractRandomUser('Uk');
-        $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user
-            var persona = data.results[0];
-            insertPicture(persona, 'profimg');
-            var genInfo = ['name', 'dob', 'email', 'location', 'cell'];
-            insertInfo(persona, genInfo);
-            var addInfo = ['gender', 'registered', 'phone', 'nat'];
-            insertInfo(persona, addInfo);
-            var header = document.getElementById('headName');
-            var namePerson = persona.name.first + ' ' + persona.name.last;
-            header.innerHTML = namePerson;
-            $("body").loading('toggle');
-        });
-    }, 1000);
+    $('body').loading({
+        onStart: function(loading) {
+          loading.overlay.slideDown(400);
+          setTimeout(function () {
+            //var persona = extractRandomUser('Uk');
+            $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user
+                var persona = data.results[0];
+                insertPicture(persona, 'profimg');
+                var genInfo = ['name', 'dob', 'email', 'location', 'cell'];
+                insertInfo(persona, genInfo);
+                var addInfo = ['gender', 'registered', 'phone', 'nat'];
+                insertInfo(persona, addInfo);
+                var header = document.getElementById('headName');
+                var namePerson = persona.name.first + ' ' + persona.name.last;
+                header.innerHTML = namePerson;
+                $("body").loading('toggle');
+            });
+        }, 1000);
+        },
+        onStop: function(loading) {
+          loading.overlay.slideUp(400);
+        }
+      });
+    /*$('body').loading('toggle');
 }
 
 function insertPicture(person, idDiv) { // get the picture of the user
