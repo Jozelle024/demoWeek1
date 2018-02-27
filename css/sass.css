@@ -1,7 +1,9 @@
 * {
   font-family: 'Raleway';
   font-size: 18px;
-  text-align: center; }
+  text-align: center;
+  align-items: center;
+  overflow: scroll; }
 
 body {
   width: 85%;
@@ -14,7 +16,7 @@ header {
   color: #380E0A;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  width: 100%; }
 
 .title {
   text-transform: uppercase;
@@ -25,8 +27,8 @@ header {
 nav {
   background-color: #FE948A;
   color: #380E0A;
-  width: 100%;
-  border: 1px solid #FFFDFD; }
+  border: 1px solid #FFFDFD;
+  width: 100%; }
 
 a {
   color: #380E0A;
@@ -38,10 +40,9 @@ h1 {
 
 main {
   background-color: #FE948A;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  width: 100%; }
 
 ul li {
   margin: 2%;
@@ -51,11 +52,9 @@ section {
   width: 90%;
   background-color: #FFFDFD;
   margin: 2% 0;
-  overflow: scroll;
   box-shadow: #BC1101 5px 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 5px; }
 
 #profimg {
@@ -68,9 +67,7 @@ img {
 
 article {
   line-height: 1.4;
-  background-color: #FFFDFD;
-  overflow: scroll;
-  align-items: center; }
+  background-color: #FFFDFD; }
   article p::first-letter {
     font-size: 30px;
     text-transform: uppercase; }

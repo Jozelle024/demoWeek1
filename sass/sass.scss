@@ -2,10 +2,13 @@ $primary-color:#BC1101 ;
 $secondary-color:#FE948A;
 $tertiary-color: #FFFDFD;
 $alternative-color:#380E0A;
+
 * {
     font-family: 'Raleway';
     font-size:18px;
     text-align: center;
+    align-items: center;
+    overflow:scroll;
 }
 body {
     width: 85%;
@@ -18,7 +21,7 @@ header{
     color: $alternative-color;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
 .title{
     text-transform: uppercase;
@@ -29,8 +32,8 @@ header{
 nav {
     background-color:$secondary-color;
     color: $alternative-color;
-    width:100%;
     border: 1px solid $tertiary-color; 
+    width: 100%;
 }
 a {
     color: $alternative-color;
@@ -42,10 +45,9 @@ h1 {
 }
 main {
     background-color: $secondary-color;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
 ul li{
     margin: 2%;
@@ -55,11 +57,9 @@ section {
     width: 90%;
     background-color: $tertiary-color;
     margin: 2% 0;
-    overflow: scroll;
     box-shadow: $primary-color 5px 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 5px;
 }
 #profimg {
@@ -73,8 +73,6 @@ img {
 article {
     line-height:1.4;
     background-color:$tertiary-color;
-    overflow: scroll;
-    align-items: center;
     p::first-letter{
         font-size: 30px;
         text-transform: uppercase;
