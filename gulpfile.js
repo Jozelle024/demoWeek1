@@ -3,11 +3,11 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var jshint = require('gulp-jshint');
+var sass = require('gulp-sass');
 
 gulp.task('default',function(){
     return gutil.log('Gulp in esecuzione');
 });
-
 
 gulp.task('copiaFile', function(){
     gulp.src('html/*.html').pipe(gulp.dest('dist'));
