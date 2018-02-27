@@ -22,3 +22,13 @@ gulp.task('jshint', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
+
+gulp.task('sass', function(){
+    return gulp.src('./sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sassWatch',function(){
+    gulp.watch('./sass/*.scss', ['sass']);
+});
