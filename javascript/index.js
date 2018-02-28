@@ -35,7 +35,6 @@ function pageLoad() {
             } else {
                 nameHeader(persona.name.first, persona.name.last, 'headName');
             }
-            
         $("body").loading('toggle');
         });
     }, 1000);
