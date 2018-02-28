@@ -26,18 +26,6 @@ footer p {
 ul {
   padding-left: 0; }
 
-/*
-footer ul li{
-    font-size: 24px;
-}
-.fa {
-    padding: 20px;
-    width: 30px;
-    color: $tertiary-color;
-    border-radius:50%;
-    background-color:$secondary-color;
-    text-decoration: none;
-} */
 header {
   background: linear-gradient(45deg, #BC1101, #FE948A);
   color: #380E0A;
@@ -63,9 +51,12 @@ nav {
     color: #380E0A;
     text-decoration: none; }
 
+ul {
+  display: flex;
+  justify-content: space-around; }
+
 ul li {
-  margin: 2%;
-  display: inline-flex; }
+  list-style: none; }
 
 main {
   background-color: #FE948A;
@@ -122,9 +113,9 @@ textarea {
   border-radius: 5px;
   width: 80%; }
 
-li {
-  height: 64px;
-  width: 64px; }
+footer ul li {
+  height: 48px;
+  width: 48px; }
 
 .icn-facebook {
   background: url(../img/icn-facebook.png) no-repeat left top; }
@@ -132,5 +123,8 @@ li {
 .icn-instagram {
   background: url(../img/icn-instagram.png) no-repeat left top; }
 
-.icn-linkedn {
-  background: url(../img/icn-linkedn.png) no-repeat left top; }
+.icn-linkedin {
+  background: url(../img/icn-linkedin.png) no-repeat left top; }
+
+.icn-twitter {
+  background: url(../img/icn-twitter.png) no-repeat left top; }

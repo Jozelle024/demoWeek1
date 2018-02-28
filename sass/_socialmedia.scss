@@ -1,8 +1,8 @@
-li{
-    height: 64px;
-    width: 64px;
+footer ul li{
+    height: 48px;
+    width: 48px;
 }
-@each $icon in facebook, instagram, linkedn{
+@each $icon in facebook, instagram, linkedin, twitter{
     .icn-#{$icon} {
         background: url(../img/icn-#{$icon}.png) no-repeat left top;
     }

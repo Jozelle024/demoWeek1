@@ -24,7 +24,10 @@ nav {
         text-decoration:none;
     }
 }
+ul{
+    display: flex;
+    justify-content: space-around;
+}
 ul li{
-    margin: 2%;
-    display: inline-flex;
+    list-style: none;
 }
