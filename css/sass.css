@@ -25,13 +25,11 @@ header {
 
 nav {
   background-color: #FE948A;
-  color: #380E0A;
   border: 1px solid #FFFDFD;
   width: 100%; }
-
-a {
-  color: #380E0A;
-  text-decoration: none; }
+  nav a {
+    color: #380E0A;
+    text-decoration: none; }
 
 h1 {
   font-family: 'Dancing Script';
