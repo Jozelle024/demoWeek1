@@ -11,12 +11,10 @@ header{
     width:60%;
     margin: 2% 0;
 }
-
 h1 {
-    font-family: 'Dancing Script';
+    font-family: 'Kaushan Script';
     font-size: 40px;
 }
-
 nav {
     background-color:$secondary-color;
     border: 1px solid $tertiary-color; 
@@ -26,7 +24,6 @@ nav {
         text-decoration:none;
     }
 }
-
 ul li{
     margin: 2%;
     display: inline-flex;
