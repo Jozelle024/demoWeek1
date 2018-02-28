@@ -41,7 +41,6 @@ function insertPicture(person, idDiv) { // get the picture of the user
 
 function insertInfo(persona, arrayDati) {
     "use strict";
-
     for (var i = 0; i < arrayDati.length; i++) {
         var key = arrayDati[i];
         var content; //= persona[key];
@@ -50,18 +49,15 @@ function insertInfo(persona, arrayDati) {
         // if typeof === object
 
         if (typeof persona[key] === 'object') {
-
             content = Object.values(persona[key]);
             var contentString = content.toString(); //to string the array content
             p = document.getElementById(key);
             p.innerHTML = key + ': ' + contentString.replace(/,/g, ' ');
-
         } else {
             content = persona[key];
             p = document.getElementById(key);
             p.innerHTML = key + ': ' + content;
         }
-
     }
 }
 function nameHeader(name,lastname,id){
@@ -76,7 +72,6 @@ function nameHeader(name,lastname,id){
     var p = document.createElement('p');
     p.innerText = content;
     id.appendChild(p);
-
     var namePerson = Object.values(person.name);//person.name.first + ' ' + person.name.last;
     var address = Object.values(person.location);
     var email = person.email;
