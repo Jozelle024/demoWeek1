@@ -25,14 +25,18 @@ function pageLoad() {
             insertInfo(persona, genInfo);
             var addInfo = ['gender', 'registered', 'phone', 'nat'];
             insertInfo(persona, addInfo);
-            if(persona.name.first === undefined){
-                nameHeader(' ',person.name.last,'headName');
-            } else if (persona.name.last){
-                nameHeader(persona.name.first,' ','headName');
+
+            if(!persona.name) {
+                if(!persona.name.first){
+                    nameHeader(' ', persona.name.last, 'headName');
+                } else if (!persona.name.last) {
+                    nameHeader(persona.name.first, ' ', 'headName');
+                }
             } else {
-                nameHeader(persona.name.first,persona.name.last,'headName');
+                nameHeader(persona.name.first, persona.name.last, 'headName');
             }
-            $("body").loading('toggle');
+            
+        $("body").loading('toggle');
         });
     }, 1000);
 }
@@ -66,7 +70,7 @@ function insertInfo(persona, arrayDati) {
         }
     }
 }
-function nameHeader(name,lastname,id){
+function nameHeader(name, lastname, id) {
     "use strict";
     var header = document.getElementById(id);
     var namePerson = name + ' ' + lastname;
