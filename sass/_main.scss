@@ -1,0 +1,35 @@
+main {
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 90%;
+    background-color: $tertiary-color;
+    margin: 2% 0;
+    box-shadow: $primary-color 5px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#profimg {
+    width: 25%;
+}
+img {
+    width: 90%;
+    border: 5px solid $alternative-color;
+    padding: 1%;
+}
+article {
+    line-height:1.4;
+    background-color:$tertiary-color;
+    width: 100%;
+    p::first-letter{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+#name {
+    text-transform: capitalize;
+}

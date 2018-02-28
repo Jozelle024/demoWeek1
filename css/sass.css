@@ -13,68 +13,6 @@ body {
 #allContent {
   width: 80%; }
 
-header {
-  background: linear-gradient(45deg, #BC1101, #FE948A);
-  color: #380E0A;
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-
-.title {
-  text-transform: uppercase;
-  border: 10px solid #FFFDFD;
-  width: 60%;
-  margin: 2% 0; }
-
-nav {
-  background-color: #FE948A;
-  border: 1px solid #FFFDFD;
-  width: 100%; }
-  nav a {
-    color: #380E0A;
-    text-decoration: none; }
-
-h1 {
-  font-family: 'Dancing Script';
-  font-size: 40px; }
-
-main {
-  background-color: #FE948A;
-  display: flex;
-  flex-direction: column; }
-
-ul li {
-  margin: 2%;
-  display: inline-flex; }
-
-section {
-  width: 90%;
-  background-color: #FFFDFD;
-  margin: 2% 0;
-  box-shadow: #BC1101 5px 5px;
-  display: flex;
-  flex-direction: column;
-  padding: 5px; }
-
-#profimg {
-  width: 25%; }
-
-img {
-  width: 90%;
-  border: 5px solid #380E0A;
-  padding: 1%; }
-
-article {
-  line-height: 1.4;
-  background-color: #FFFDFD;
-  width: 100%; }
-  article p::first-letter {
-    font-size: 30px;
-    text-transform: uppercase; }
-
-#name {
-  text-transform: capitalize; }
-
 footer {
   background-color: #380E0A;
   color: #FE948A; }
@@ -104,3 +42,65 @@ input {
 
 textarea {
   border-radius: 5px; }
+
+header {
+  background: linear-gradient(45deg, #BC1101, #FE948A);
+  color: #380E0A;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.title {
+  text-transform: uppercase;
+  border: 10px solid #FFFDFD;
+  width: 60%;
+  margin: 2% 0; }
+
+h1 {
+  font-family: 'Dancing Script';
+  font-size: 40px; }
+
+nav {
+  background-color: #FE948A;
+  border: 1px solid #FFFDFD;
+  width: 100%; }
+  nav a {
+    color: #380E0A;
+    text-decoration: none; }
+
+ul li {
+  margin: 2%;
+  display: inline-flex; }
+
+main {
+  background-color: #FE948A;
+  display: flex;
+  flex-direction: column; }
+
+section {
+  width: 90%;
+  background-color: #FFFDFD;
+  margin: 2% 0;
+  box-shadow: #BC1101 5px 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px; }
+
+#profimg {
+  width: 25%; }
+
+img {
+  width: 90%;
+  border: 5px solid #380E0A;
+  padding: 1%; }
+
+article {
+  line-height: 1.4;
+  background-color: #FFFDFD;
+  width: 100%; }
+  article p::first-letter {
+    font-size: 30px;
+    text-transform: uppercase; }
+
+#name {
+  text-transform: capitalize; }
