@@ -26,9 +26,11 @@ function pageLoad() {
             var addInfo = ['gender', 'registered', 'phone', 'nat'];
             insertInfo(persona, addInfo);
             if(persona.name.first === undefined){
-                nameHeader('','','headName');
+                nameHeader(' ',person.name.last,'headName');
+            } else if (persona.name.last){
+                nameHeader(persona.name.first,' ','headName');
             } else {
-            nameHeader(persona.name.first,persona.name.last,'headName');
+                nameHeader(persona.name.first,persona.name.last,'headName');
             }
             $("body").loading('toggle');
         });
