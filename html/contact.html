@@ -6,109 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
-    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/sass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 </head>
 
 <body onload="pageLoad()">
-    <header>
-        <div class="title">
-            <h1 id="headName">Contact</h1>
-            <!-- <p>Front End Web Developer</p> -->
-        </div>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#about">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#about">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#about">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                    </a>
-                </ul>
+    <div id="allContent">
+        <header>
+            <div class="title">
+                <h1 id="headName">Contact</h1>
+                <!-- <p>Front End Web Developer</p> -->
             </div>
-        </nav>
-    </header>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#about">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#about">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#about">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
 
-    <main>
-        <section id="contact">
-            <p>Do you want to contact me? Just fill up the form below and leave me a message.</p>
-            <form action="" method="POST">
-                <table>
-                    <tr>
-                        <td> Name: </td>
-                        <td>
-                            <input type="text" id="name" placeholder="Name" required> </td>
-                    </tr>
-                    <tr>
-                        <td>Telephone number:</td>
-                        <td>
-                            <input type="tel" id="tel" placeholder="Telephone number" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>
-                            <input type="email" id="email" placeholder="Email" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> Message:</td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Leave me a message." required></textarea> </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Send" id="data" class="button">
-                        </td>
-                        <td>
-                            <input type="reset" value="Reset">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </section>
-    </main>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <footer>
-        <p>All rights reserved. </br>
-            Informations from random user generator. </p>
-        <ul>
-            <li>
-                <a href="#" class="fa fa-facebook"></a>
-            </li>
-            <li>
-                <a href="#" class="fa fa-instagram"> </a>
-            </li>
-            <li>
-                <a href="#" class="fa fa-linkedin"></a>
-            </li>
-        </ul>
-        <div id="about">
-            <p> This website is for academic purposes. </p>
+        <main>
+            <section id="contact">
+                <p>Do you want to contact me? Just fill up the form below and leave me a message.</p>
+                <form action="" method="POST" id="form">
+                    <div>
+                        <p> Name: </p>
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <p> Tel#: </p>
+                        <input type="tel" id="tel" placeholder="Telephone number" required>
 
-        </div>
-    </footer>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../javascript/index.js"></script>
-    <script src="../javascript/userGenerator.js"></script>
+                    </div>
+                    <div>
+                        <p>Email: </p>
+                        <input type="email" id="email" placeholder="Email" required>
 
+                    </div>
+                    <div>
+                        <p>Message: </p>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Leave me a message." required></textarea>
+
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Send" id="data" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>All rights reserved. </br>
+                Informations from random user generator. </p>
+            <ul>
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"> </a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
+            <div id="about">
+                <p> This website is for academic purposes. </p>
+
+            </div>
+        </footer>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../javascript/index.js"></script>
+        <script src="../javascript/userGenerator.js"></script>
+    </div>
 </body>
 
 </html>

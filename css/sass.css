@@ -37,14 +37,6 @@ footer ul li {
   background-color: #FE948A;
   text-decoration: none; }
 
-input {
-  border: 1px 0px solid black;
-  border-radius: 5px;
-  width: 100%; }
-
-textarea {
-  border-radius: 5px; }
-
 header {
   background: linear-gradient(45deg, #BC1101, #FE948A);
   color: #380E0A;
@@ -106,3 +98,25 @@ article {
 
 #name {
   text-transform: capitalize; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0; }
+    form div p {
+      margin: 0; }
+  form .button {
+    width: 49%; }
+
+input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%; }
+
+textarea {
+  border-radius: 5px;
+  width: 80%; }
