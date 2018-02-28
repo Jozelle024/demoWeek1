@@ -1,18 +1,22 @@
 /* exported pageLoad */
 /* global $ */
 
-function pageLoad() {
+$('document').ready(function () {
+    "use strict";
+    pageLoad();
+});
 
+function pageLoad() {
     "use strict";
     $('body').loading({
-        onStart: function(loading) {
-          loading.overlay.slideDown(400);
+        onStart: function (loading) {
+            loading.overlay.slideDown(400);
         },
-        onStop: function(loading) {
-          loading.overlay.slideUp(400);
+        onStop: function (loading) {
+            loading.overlay.slideUp(400);
         }
-      },'toggle');
-      setTimeout(function () {
+    }, 'toggle');
+    setTimeout(function () {
         //var persona = extractRandomUser('Uk');
         $.getJSON('https://randomuser.me/api/', function (data) { // to get json from th website random user
             var persona = data.results[0];
@@ -21,15 +25,11 @@ function pageLoad() {
             insertInfo(persona, genInfo);
             var addInfo = ['gender', 'registered', 'phone', 'nat'];
             insertInfo(persona, addInfo);
-            var header = document.getElementById('headName');
-            var namePerson = persona.name.first + ' ' + persona.name.last;
-            header.innerHTML = namePerson;
+            nameHeader(persona.name.first,persona.name.last,'headName');
             $("body").loading('toggle');
         });
     }, 1000);
 }
-    /*$('body').loading('toggle');*/
-    
 
 function insertPicture(person, idDiv) { // get the picture of the user
     "use strict";
@@ -44,7 +44,6 @@ function insertInfo(persona, arrayDati) {
 
     for (var i = 0; i < arrayDati.length; i++) {
         var key = arrayDati[i];
-
         var content; //= persona[key];
         var p; //= document.getElementById(key);
         //p.innerHTML = key + ': ' + content ;
@@ -64,6 +63,12 @@ function insertInfo(persona, arrayDati) {
         }
 
     }
+}
+function nameHeader(name,lastname,id){
+    "use strict";
+    var header = document.getElementById(id);
+    var namePerson = name + ' ' + lastname;
+    header.innerHTML = namePerson;
 }
 /*
  function insertInfo(idParent, content){

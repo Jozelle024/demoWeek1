@@ -47,6 +47,8 @@ nav {
   nav a {
     color: #380E0A;
     text-decoration: none; }
+    nav a:hover {
+      font-size: 150%; }
 
 ul {
   display: flex;
