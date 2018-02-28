@@ -23,9 +23,6 @@ footer p {
   font-size: 15px;
   margin: 0; }
 
-ul {
-  padding-left: 0; }
-
 header {
   background: linear-gradient(45deg, #BC1101, #FE948A);
   color: #380E0A;
@@ -53,9 +50,12 @@ nav {
 
 ul {
   display: flex;
-  justify-content: space-around; }
+  padding-left: 0;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 ul li {
+  margin: 1%;
   list-style: none; }
 
 main {
